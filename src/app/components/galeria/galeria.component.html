@@ -1,0 +1,10 @@
+<section class="py-16">
+  <div class="container mx-auto text-center">
+    <h2 class="text-4xl font-bold text-gray-900 mb-6">Galería de Ichi</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div *ngFor="let image of images">
+        <img [src]="image" alt="Imagen de Ichi" class="rounded-lg shadow-lg transition-transform transform hover:scale-105" />
+      </div>
+    </div>
+  </div>
+</section>
